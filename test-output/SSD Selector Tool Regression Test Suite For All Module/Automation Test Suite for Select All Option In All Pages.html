@@ -1,0 +1,2079 @@
+<html>
+<head>
+<title>TestNG:  Automation Test Suite for Select All Option In All Pages</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Automation Test Suite for Select All Option In All Pages</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>63/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Apr 08 04:37:02 PDT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>98 seconds (98699 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyAllReadSSDsDisplayedOnSelectServerType()'><b>ToVerifyAllReadSSDsDisplayedOnSelectServerType</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Check All Read SSD Are Displayed </td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;139 -  SSDs meet your requirements&apos;) to be present in element [[ChromeDriver: chrome on WINDOWS (ffd7e4dafb18b44774456c2f045792ce)] -&gt; partial link text:  -  SSDs meet your requirements] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.116.144.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60290}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ffd7e4dafb18b44774456c2f045792ce
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at hpe.NewSSD.SSDReadAll.ToVerifyAllReadSSDsDisplayedOnSelectServerType(SSDReadAll.java:519)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2037343019", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2037343019'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;139 -  SSDs meet your requirements&apos;) to be present in element [[ChromeDriver: chrome on WINDOWS (ffd7e4dafb18b44774456c2f045792ce)] -&gt; partial link text:  -  SSDs meet your requirements] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.116.144.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60290}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ffd7e4dafb18b44774456c2f045792ce
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at hpe.NewSSD.SSDReadAll.ToVerifyAllReadSSDsDisplayedOnSelectServerType(SSDReadAll.java:519)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyAllReadSSDsDisplayedOnSelectServerType()'><b>ToVerifyAllReadSSDsDisplayedOnSelectServerType</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Check All Mixed SSD Are Displayed </td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;131 -  SSDs meet your requirements&apos;) to be present in element [[ChromeDriver: chrome on WINDOWS (fbfdce7edba2fb1efdf69d10541bd23b)] -&gt; partial link text:  -  SSDs meet your requirements] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.116.144.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60462}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fbfdce7edba2fb1efdf69d10541bd23b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at hpe.NewSSD.SSDMixedUse.ToVerifyAllReadSSDsDisplayedOnSelectServerType(SSDMixedUse.java:512)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1696621151", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1696621151'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;131 -  SSDs meet your requirements&apos;) to be present in element [[ChromeDriver: chrome on WINDOWS (fbfdce7edba2fb1efdf69d10541bd23b)] -&gt; partial link text:  -  SSDs meet your requirements] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.116.144.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60462}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fbfdce7edba2fb1efdf69d10541bd23b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at hpe.NewSSD.SSDMixedUse.ToVerifyAllReadSSDsDisplayedOnSelectServerType(SSDMixedUse.java:512)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>11</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyAllSSDsResultDisplayed()'><b>ToVerifyAllSSDsResultDisplayed</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: All SSD Results should be displayed</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;216 -  SSDs meet your requirements&apos;) to be present in element [[ChromeDriver: chrome on WINDOWS (fd26eea73eb6a933732fc3910a87df68)] -&gt; partial link text:  -  SSDs meet your requirements] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.116.144.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60909}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd26eea73eb6a933732fc3910a87df68
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at hpe.NewSSD.SSDSelectAll.ToVerifyAllSSDsResultDisplayed(SSDSelectAll.java:558)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2092235846", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2092235846'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;216 -  SSDs meet your requirements&apos;) to be present in element [[ChromeDriver: chrome on WINDOWS (fd26eea73eb6a933732fc3910a87df68)] -&gt; partial link text:  -  SSDs meet your requirements] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.116.144.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60909}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd26eea73eb6a933732fc3910a87df68
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at hpe.NewSSD.SSDSelectAll.ToVerifyAllSSDsResultDisplayed(SSDSelectAll.java:558)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyBrowserBackButton()'><b>ToVerifyBrowserBackButton</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify Best Availability Page Displayed</td>
+<td><div><pre>java.lang.AssertionError: expected [https://stg-app-hpessd.azurewebsites.net/recommendation] but found [https://stg-app-hpessd.azurewebsites.net/mainstream]
+	at hpe.NewSSD.SSDVROAll.ToVerifyBrowserBackButton(SSDVROAll.java:586)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1490433502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1490433502'><pre>java.lang.AssertionError: expected [https://stg-app-hpessd.azurewebsites.net/recommendation] but found [https://stg-app-hpessd.azurewebsites.net/mainstream]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at hpe.NewSSD.SSDVROAll.ToVerifyBrowserBackButton(SSDVROAll.java:586)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyDownloadIndividualExportExcelFile()'><b>ToVerifyDownloadIndividualExportExcelFile</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify To Download Excel File For Individual SSDs</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@id=&apos;download_22&apos;]&quot;}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.116.144.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 465e2e6f0ea12adf27326009c1ae71d0
+*** Element info: {Using=xpath, value=//img[@id=&apos;download_22&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at hpessdPageObjects.SSDResultPage.DownloadIndividualExcelFile(SSDResultPage.java:879)
+	at hpe.NewSSD.SSDWriteAll.ToVerifyDownloadIndividualExportExcelFile(SSDWriteAll.java:557)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace796240305", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace796240305'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@id=&apos;download_22&apos;]&quot;}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.116.144.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 465e2e6f0ea12adf27326009c1ae71d0
+*** Element info: {Using=xpath, value=//img[@id=&apos;download_22&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at hpessdPageObjects.SSDResultPage.DownloadIndividualExcelFile(SSDResultPage.java:879)
+	at hpe.NewSSD.SSDWriteAll.ToVerifyDownloadIndividualExportExcelFile(SSDWriteAll.java:557)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyDownloadIndividualExportExcelFile()'><b>ToVerifyDownloadIndividualExportExcelFile</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify To Download Excel File For Individual SSDs</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@id=&apos;download_22&apos;]&quot;}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.116.144.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60462}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fbfdce7edba2fb1efdf69d10541bd23b
+*** Element info: {Using=xpath, value=//img[@id=&apos;download_22&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at hpessdPageObjects.SSDResultPage.DownloadIndividualExcelFile(SSDResultPage.java:879)
+	at hpe.NewSSD.SSDMixedUse.ToVerifyDownloadIndividualExportExcelFile(SSDMixedUse.java:557)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace148185875", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace148185875'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@id=&apos;download_22&apos;]&quot;}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.116.144.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60462}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fbfdce7edba2fb1efdf69d10541bd23b
+*** Element info: {Using=xpath, value=//img[@id=&apos;download_22&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at hpessdPageObjects.SSDResultPage.DownloadIndividualExcelFile(SSDResultPage.java:879)
+	at hpe.NewSSD.SSDMixedUse.ToVerifyDownloadIndividualExportExcelFile(SSDMixedUse.java:557)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyDownloadIndividualExportExcelFile()'><b>ToVerifyDownloadIndividualExportExcelFile</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify To Download Excel File For Individual SSDs</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@id=&apos;download_22&apos;]&quot;}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.116.144.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 24958d45692a27485d123f9703f48440
+*** Element info: {Using=xpath, value=//img[@id=&apos;download_22&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at hpessdPageObjects.SSDResultPage.DownloadIndividualExcelFile(SSDResultPage.java:879)
+	at hpe.NewSSD.SSDVROAll.ToVerifyDownloadIndividualExportExcelFile(SSDVROAll.java:559)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1691400419", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1691400419'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@id=&apos;download_22&apos;]&quot;}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.116.144.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 24958d45692a27485d123f9703f48440
+*** Element info: {Using=xpath, value=//img[@id=&apos;download_22&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at hpessdPageObjects.SSDResultPage.DownloadIndividualExcelFile(SSDResultPage.java:879)
+	at hpe.NewSSD.SSDVROAll.ToVerifyDownloadIndividualExportExcelFile(SSDVROAll.java:559)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyDownloadPDFFileIndividualSSDs()'><b>ToVerifyDownloadPDFFileIndividualSSDs</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify To Download PDF File For Individual SSDs</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/section[@id=&apos;mainContent&apos;]/div[5]/div[4]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/a[2]/img[1]&quot;}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.116.144.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60462}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fbfdce7edba2fb1efdf69d10541bd23b
+*** Element info: {Using=xpath, value=//body/section[@id=&apos;mainContent&apos;]/div[5]/div[4]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/a[2]/img[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at hpessdPageObjects.SSDResultPage.DownloadPDFFile(SSDResultPage.java:856)
+	at hpe.NewSSD.SSDMixedUse.ToVerifyDownloadPDFFileIndividualSSDs(SSDMixedUse.java:544)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace359985955", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace359985955'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/section[@id=&apos;mainContent&apos;]/div[5]/div[4]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/a[2]/img[1]&quot;}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.116.144.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60462}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fbfdce7edba2fb1efdf69d10541bd23b
+*** Element info: {Using=xpath, value=//body/section[@id=&apos;mainContent&apos;]/div[5]/div[4]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/a[2]/img[1]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at hpessdPageObjects.SSDResultPage.DownloadPDFFile(SSDResultPage.java:856)
+	at hpe.NewSSD.SSDMixedUse.ToVerifyDownloadPDFFileIndividualSSDs(SSDMixedUse.java:544)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyInterfaceMenuBar()'><b>ToVerifyInterfaceMenuBar</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Menu Bar in Interface Type Page</td>
+<td><div><pre>org.junit.ComparisonFailure: expected:&lt;...d.azurewebsites.net/[interface]-type&gt; but was:&lt;...d.azurewebsites.net/[server]-type&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at hpe.NewSSD.SSDSelectAll.ToVerifyInterfaceMenuBar(SSDSelectAll.java:298)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2032757984", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2032757984'><pre>org.junit.ComparisonFailure: expected:&lt;...d.azurewebsites.net/[interface]-type&gt; but was:&lt;...d.azurewebsites.net/[server]-type&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at hpe.NewSSD.SSDSelectAll.ToVerifyInterfaceMenuBar(SSDSelectAll.java:298)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyItRedirectsToHomePage()'><b>ToVerifyItRedirectsToHomePage</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify Home Page Is Displayed</td>
+<td><div><pre>java.lang.AssertionError: expected [https://stg-app-hpessd.azurewebsites.net/recommendation#] but found [https://stg-app-hpessd.azurewebsites.net/index]
+	at hpe.NewSSD.SSDVROAll.ToVerifyItRedirectsToHomePage(SSDVROAll.java:606)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1978443480", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1978443480'><pre>java.lang.AssertionError: expected [https://stg-app-hpessd.azurewebsites.net/recommendation#] but found [https://stg-app-hpessd.azurewebsites.net/index]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at hpe.NewSSD.SSDVROAll.ToVerifyItRedirectsToHomePage(SSDVROAll.java:606)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPagSSDRequirements()'><b>ToVerifyResultPagSSDRequirements</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page label :- SSD meet Your Requirements</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;153 -  SSDs meet your requirements&apos;) to be present in element [[ChromeDriver: chrome on WINDOWS (fd26eea73eb6a933732fc3910a87df68)] -&gt; partial link text:  -  SSDs meet your requirements] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.116.144.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60909}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd26eea73eb6a933732fc3910a87df68
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at hpe.NewSSD.SSDSelectAll.ToVerifyResultPagSSDRequirements(SSDSelectAll.java:438)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace366221651", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace366221651'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;153 -  SSDs meet your requirements&apos;) to be present in element [[ChromeDriver: chrome on WINDOWS (fd26eea73eb6a933732fc3910a87df68)] -&gt; partial link text:  -  SSDs meet your requirements] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.116.144.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60909}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd26eea73eb6a933732fc3910a87df68
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at hpe.NewSSD.SSDSelectAll.ToVerifyResultPagSSDRequirements(SSDSelectAll.java:438)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageSearchTab()'><b>ToVerifyResultPageSearchTab</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page Refine Your Results Elements :- Search Tab</td>
+<td><div><pre>java.lang.AssertionError: expected [] but found [Search by SKU]
+	at hpessdPageObjects.SSDResultPage.SSDSearchTabText(SSDResultPage.java:509)
+	at hpe.NewSSD.SSDSelectAll.ToVerifyResultPageSearchTab(SSDSelectAll.java:478)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1917668981", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1917668981'><pre>java.lang.AssertionError: expected [] but found [Search by SKU]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at hpessdPageObjects.SSDResultPage.SSDSearchTabText(SSDResultPage.java:509)
+	at hpe.NewSSD.SSDSelectAll.ToVerifyResultPageSearchTab(SSDSelectAll.java:478)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToCheckOptionsAreAutoSelected()'><b>ToCheckOptionsAreAutoSelected</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify selected Options are displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToEditFormFactionOptions()'><b>ToEditFormFactionOptions</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: Form Factor Options Can be edited </td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToEditFormFactionOptions()'><b>ToEditFormFactionOptions</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: Form Factor Options Can be edited </td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToEditFormFactionOptions()'><b>ToEditFormFactionOptions</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: Form Factor Options Can be edited </td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToEditFormFactionOptions()'><b>ToEditFormFactionOptions</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: Form Factor Options Can be edited </td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToEditInterfaceOptions()'><b>ToEditInterfaceOptions</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Edit the Interface options</td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToEditInterfaceOptions()'><b>ToEditInterfaceOptions</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Edit the Interface options</td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToEditInterfaceOptions()'><b>ToEditInterfaceOptions</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Edit the Interface options</td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToEditInterfaceOptions()'><b>ToEditInterfaceOptions</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Edit the Interface options</td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToMaximumPtToMiddlePt()'><b>ToMaximumPtToMiddlePt</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: Move the Max Point to Middle</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToMaximumPtToMiddlePt()'><b>ToMaximumPtToMiddlePt</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: Move the Max Point to Middle</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToMaximumPtToMiddlePt()'><b>ToMaximumPtToMiddlePt</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: Move the Max Point to Middle</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToMaximumPtToMiddlePt()'><b>ToMaximumPtToMiddlePt</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: Move the Max Point to Middle</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToSelectServerTypeServerModel()'><b>ToSelectServerTypeServerModel</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: Select the Server Type and Server Model</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToSelectServerTypeServerModel()'><b>ToSelectServerTypeServerModel</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: Select the Server Type and Server Model</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToSelectServerTypeServerModel()'><b>ToSelectServerTypeServerModel</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: Select the Server Type and Server Model</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToSelectServerTypeServerModel()'><b>ToSelectServerTypeServerModel</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: Select the Server Type and Server Model</td>
+<td></td>
+<td>20</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerfyNextBtnEnabled()'><b>ToVerfyNextBtnEnabled</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: Click on Select All Option and Verfiy the Next is Enabled</td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyAlertMessage()'><b>ToVerifyAlertMessage</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Alert Message Is Displayed on Mainstream CheckBox</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyAllVeryreadOptimizedSSDsDisplayedOnSelectServerType()'><b>ToVerifyAllVeryreadOptimizedSSDsDisplayedOnSelectServerType</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Check All Very Read Optimized SSDs Are Displayed </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyAllWriteIntensiveSSDsDisplayedOnSelectServerType()'><b>ToVerifyAllWriteIntensiveSSDsDisplayedOnSelectServerType</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Check All Mixed SSD Are Displayed </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyBestAvailabilityMenubar()'><b>ToVerifyBestAvailabilityMenubar</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Menu bar in Best Availability Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyBestAvailabilityOptionSelected()'><b>ToVerifyBestAvailabilityOptionSelected</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Best Availability Option selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyBestAvailabilityPageDisplayed()'><b>ToVerifyBestAvailabilityPageDisplayed</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method:  Mainstream Page is displayed </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyBestAvailabilityPageDisplayed()'><b>ToVerifyBestAvailabilityPageDisplayed</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method:  Mainstream Page is displayed </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyBestAvailabilityPageDisplayed()'><b>ToVerifyBestAvailabilityPageDisplayed</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method:  Mainstream Page is displayed </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyBestAvailabilityPageDisplayed()'><b>ToVerifyBestAvailabilityPageDisplayed</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method:  Mainstream Page is displayed </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyBestAvailabilityPageDisplayed()'><b>ToVerifyBestAvailabilityPageDisplayed</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Best Availability Page is Displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyCapacityAlert()'><b>ToVerifyCapacityAlert</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify Capacity Maximum to Minimum</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyCapacityAlert()'><b>ToVerifyCapacityAlert</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify Capacity Maximum to Minimum</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyCapacityAlert()'><b>ToVerifyCapacityAlert</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify Capacity Maximum to Minimum</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyCapacityAlert()'><b>ToVerifyCapacityAlert</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify Capacity Maximum to Minimum</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyCapacityLabel()'><b>ToVerifyCapacityLabel</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Capacity Label</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyCapacityValue()'><b>ToVerifyCapacityValue</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify the Capacity Value</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyClickonBackBtn()'><b>ToVerifyClickonBackBtn</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Home Page displayed on click on Back Button</td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyDisplayOfWorkloads()'><b>ToVerifyDisplayOfWorkloads</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify Workload display based on the Performance</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyDisplayOfWorkloads()'><b>ToVerifyDisplayOfWorkloads</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify Workload display based on the Performance</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyDisplayOfWorkloads()'><b>ToVerifyDisplayOfWorkloads</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify Workload display based on the Performance</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyDisplayOfWorkloads()'><b>ToVerifyDisplayOfWorkloads</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify Workload display based on the Performance</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyDownloadExportCSVFile()'><b>ToVerifyDownloadExportCSVFile</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method:  To Verify to Export CSV File</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyDownloadExportCSVFile()'><b>ToVerifyDownloadExportCSVFile</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method:  To Verify to Export CSV File</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyDownloadExportCSVFile()'><b>ToVerifyDownloadExportCSVFile</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method:  To Verify to Export CSV File</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyDownloadExportCSVFile()'><b>ToVerifyDownloadExportCSVFile</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method:  To Verify to Export CSV File</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyDownloadExportExcelFile()'><b>ToVerifyDownloadExportExcelFile</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method:  To Verify to Export Excel File</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyDownloadExportExcelFile()'><b>ToVerifyDownloadExportExcelFile</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method:  To Verify to Export Excel File</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyDownloadExportExcelFile()'><b>ToVerifyDownloadExportExcelFile</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method:  To Verify to Export Excel File</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyDownloadExportExcelFile()'><b>ToVerifyDownloadExportExcelFile</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method:  To Verify to Export Excel File</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyDownloadPDFFileIndividualSSDs()'><b>ToVerifyDownloadPDFFileIndividualSSDs</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify To Download PDF File For Individual SSDs</td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyDownloadPDFFileIndividualSSDs()'><b>ToVerifyDownloadPDFFileIndividualSSDs</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify To Download PDF File For Individual SSDs</td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyEditedOptionRetained()'><b>ToVerifyEditedOptionRetained</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: Form Factor Options Edited </td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyEditedOptionRetained()'><b>ToVerifyEditedOptionRetained</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: Form Factor Options Edited </td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyEditedOptionRetained()'><b>ToVerifyEditedOptionRetained</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: Form Factor Options Edited </td>
+<td></td>
+<td>4</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyEditedOptionRetained()'><b>ToVerifyEditedOptionRetained</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: Form Factor Options Edited </td>
+<td></td>
+<td>5</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyEditedOptionsRetained()'><b>ToVerifyEditedOptionsRetained</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Check Values are retained  </td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyEditedOptionsRetained()'><b>ToVerifyEditedOptionsRetained</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Check Values are retained  </td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyEditedOptionsRetained()'><b>ToVerifyEditedOptionsRetained</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Check Values are retained  </td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyEditedOptionsRetained()'><b>ToVerifyEditedOptionsRetained</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Check Values are retained  </td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyFormFactorAutoSelected()'><b>ToVerifyFormFactorAutoSelected</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verfiy the Form Factor Options are AutoSelected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyFormFactorImages()'><b>ToVerifyFormFactorImages</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Form Factor Images are displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyFormFactorMenuBar()'><b>ToVerifyFormFactorMenuBar</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Menu Bar in Form Factor Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyFormFactorNextBtn()'><b>ToVerifyFormFactorNextBtn</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Form Factor Next Btn</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyFormFactorOptions()'><b>ToVerifyFormFactorOptions</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method:  FormFactors are autoSelected </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyFormFactorOptions()'><b>ToVerifyFormFactorOptions</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method:  FormFactors are autoSelected </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyFormFactorOptions()'><b>ToVerifyFormFactorOptions</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method:  FormFactors are autoSelected </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyFormFactorOptions()'><b>ToVerifyFormFactorOptions</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method:  FormFactors are autoSelected </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyFormFactorOptionsEditable()'><b>ToVerifyFormFactorOptionsEditable</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Form Factor options are Editable</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyFormFactorPage()'><b>ToVerifyFormFactorPage</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: Form Factor Page Display</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyFormFactorPage()'><b>ToVerifyFormFactorPage</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: Form Factor Page Display</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyFormFactorPage()'><b>ToVerifyFormFactorPage</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: Form Factor Page Display</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyFormFactorPage()'><b>ToVerifyFormFactorPage</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: Form Factor Page Display</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyFormFactorPageDisplayed()'><b>ToVerifyFormFactorPageDisplayed</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify the Form Factor Page is displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyHomePageLabels()'><b>ToVerifyHomePageLabels</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify Home Page Components </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyHomePageLabels()'><b>ToVerifyHomePageLabels</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify Home Page Components </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyHomePageLabels()'><b>ToVerifyHomePageLabels</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify Home Page Components </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyHomePageLabels()'><b>ToVerifyHomePageLabels</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify Home Page Components </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyHomePageLables()'><b>ToVerifyHomePageLables</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify the Labels in Home Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyHomePagePDFFilesOpen()'><b>ToVerifyHomePagePDFFilesOpen</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify Home Page, PDF files are opening</td>
+<td></td>
+<td>4</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyHomePagePDFFilesOpen()'><b>ToVerifyHomePagePDFFilesOpen</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify Home Page, PDF files are opening</td>
+<td></td>
+<td>5</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyHomePagePDFFilesOpen()'><b>ToVerifyHomePagePDFFilesOpen</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify Home Page, PDF files are opening</td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyHomePagePDFFilesOpen()'><b>ToVerifyHomePagePDFFilesOpen</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify Home Page, PDF files are opening</td>
+<td></td>
+<td>4</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyHomepage()'><b>ToVerifyHomepage</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify the Home Page To Launch The SSD Selector Tool</td>
+<td></td>
+<td>17</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyHomepage()'><b>ToVerifyHomepage</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify the Home Page To Launch The SSD Selector Tool</td>
+<td></td>
+<td>12</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyHomepage()'><b>ToVerifyHomepage</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify the Home Page To Launch The SSD Selector Tool</td>
+<td></td>
+<td>11</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyHomepage()'><b>ToVerifyHomepage</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify the Home Page To Launch The SSD Selector Tool</td>
+<td></td>
+<td>14</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyInterfaceLabels()'><b>ToVerifyInterfaceLabels</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: Options are auto Selected</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyInterfaceLabels()'><b>ToVerifyInterfaceLabels</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: Options are auto Selected</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyInterfaceLabels()'><b>ToVerifyInterfaceLabels</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: Options are auto Selected</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyInterfaceLabels()'><b>ToVerifyInterfaceLabels</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: Options are auto Selected</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyInterfaceNextbtn()'><b>ToVerifyInterfaceNextbtn</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: Click on Next btn in Interface Type page</td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyInterfaceOptions()'><b>ToVerifyInterfaceOptions</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Interface Options are autoselected</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyInterfaceOptionsEdit()'><b>ToVerifyInterfaceOptionsEdit</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Interface options are Editable</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyInterfaceOtherPageMenuBar()'><b>ToVerifyInterfaceOtherPageMenuBar</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify In Menu Bar, Other Pages Names are visible</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyInterfacePage()'><b>ToVerifyInterfacePage</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: Interface Page is displayed and Options are auto Selected</td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyInterfacePage()'><b>ToVerifyInterfacePage</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: Interface Page is displayed and Options are auto Selected</td>
+<td></td>
+<td>4</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyInterfacePage()'><b>ToVerifyInterfacePage</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: Interface Page is displayed and Options are auto Selected</td>
+<td></td>
+<td>4</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyInterfacePage()'><b>ToVerifyInterfacePage</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: Interface Page is displayed and Options are auto Selected</td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyNextBtnEnabled()'><b>ToVerifyNextBtnEnabled</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Next Btn is Enabled</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyNextBtnInSSDPage()'><b>ToVerifyNextBtnInSSDPage</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Next Btn is redirecting to Server Type Page</td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyOnlyMixedUsSSDsDisplayed()'><b>ToVerifyOnlyMixedUsSSDsDisplayed</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method:  To Verify Only Mixed Use SSDs Are Displayed </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyOnlyVeryReadOptimizedSSDsDisplayed()'><b>ToVerifyOnlyVeryReadOptimizedSSDsDisplayed</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method:  To Verify Only Very Read Optimized SSDs Are Displayed </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyOnlyWriteIntensiveSSDsDisplayed()'><b>ToVerifyOnlyWriteIntensiveSSDsDisplayed</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method:  To Verify Only Mixed Use SSDs Are Displayed </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyOtherPageNamesInMenuBar()'><b>ToVerifyOtherPageNamesInMenuBar</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Other Pages names Displayed in Menu bar</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyPDFFileLinkOpen()'><b>ToVerifyPDFFileLinkOpen</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify the Release Notes and User Manual Link is opened</td>
+<td></td>
+<td>4</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyPDFFileOpened()'><b>ToVerifyPDFFileOpened</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify About Workloads PDF File is opened</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyPriceLink()'><b>ToVerifyPriceLink</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify Price Link Is Opened</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyPriceLink()'><b>ToVerifyPriceLink</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify Price Link Is Opened</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyPriceLink()'><b>ToVerifyPriceLink</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Price URl Link</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyReadIntensiveSelected()'><b>ToVerifyReadIntensiveSelected</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify Read Intensive Is Selected Click on Back Btn in SSD Page</td>
+<td></td>
+<td>9</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyReadIntensiveSelected()'><b>ToVerifyReadIntensiveSelected</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify Read Intensive Is Selected Click on Back Btn in SSD Page</td>
+<td></td>
+<td>5</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultMaxRandomReadSlider()'><b>ToVerifyResultMaxRandomReadSlider</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page Refine Your Results Elements :- Max Random Read Slider Label</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageBestAvailabiltyPart()'><b>ToVerifyResultPageBestAvailabiltyPart</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page Refine Your Results Elements :- BestAvailabilty Enabled</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageCapacitySlider()'><b>ToVerifyResultPageCapacitySlider</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page Refine Your Results Elements :- Capacity Slider Label</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyResultPageDisplayed()'><b>ToVerifyResultPageDisplayed</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: Result Page is Displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyResultPageDisplayed()'><b>ToVerifyResultPageDisplayed</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: Result Page is Displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyResultPageDisplayed()'><b>ToVerifyResultPageDisplayed</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: Result Page is Displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyResultPageDisplayed()'><b>ToVerifyResultPageDisplayed</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: Result Page is Displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageDisplayed()'><b>ToVerifyResultPageDisplayed</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page is displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageEnduranceSlider()'><b>ToVerifyResultPageEnduranceSlider</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page Refine Your Results Elements :- Endurance Slider Label</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageFormFactorPart()'><b>ToVerifyResultPageFormFactorPart</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page Refine Your Results Elements :- FormFactor Enabled</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageInterfaceTypePart()'><b>ToVerifyResultPageInterfaceTypePart</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page Refine Your Results Elements :- InterfaceType Enabled</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageMaxPowerSlider()'><b>ToVerifyResultPageMaxPowerSlider</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page Refine Your Results Elements :- Max Power Slider Label</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageMaxRandomWriteSlider()'><b>ToVerifyResultPageMaxRandomWriteSlider</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page Refine Your Results Elements :- Max Random Write Slider Label</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageRandomReadSlider()'><b>ToVerifyResultPageRandomReadSlider</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page Refine Your Results Elements :- Random Read Slider Label</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageRandomWriteSlider()'><b>ToVerifyResultPageRandomWriteSlider</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page Refine Your Results Elements :- Random Write Slider Label</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageRefinelabel()'><b>ToVerifyResultPageRefinelabel</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page label :-  Refine your Results</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageSSDPortfilioAlignmentlabel()'><b>ToVerifyResultPageSSDPortfilioAlignmentlabel</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page label :-  SSDPortfilioAlignment</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageSSDWorkloadPart()'><b>ToVerifyResultPageSSDWorkloadPart</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page Refine Your Results Elements :- SSD Workload Enabled</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageSelectAllOption()'><b>ToVerifyResultPageSelectAllOption</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page Select All/UnCheck All CheckBox</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageSelectAllOptionSelected()'><b>ToVerifyResultPageSelectAllOptionSelected</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page, Select All is Checked</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageServerModel()'><b>ToVerifyResultPageServerModel</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page Refine Your Results Elements :- Server Model Label</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyResultPageServerType()'><b>ToVerifyResultPageServerType</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Result Page Refine Your Results Elements :- Server Type Label</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifySSDMainStreamResults()'><b>ToVerifySSDMainStreamResults</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify The MainStream Results</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifySSDNonMainstream()'><b>ToVerifySSDNonMainstream</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify NonMainstream SSDs Results</td>
+<td></td>
+<td>5</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifySSDPage()'><b>ToVerifySSDPage</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify SSD Page is enabled</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifySSDPageDisplayed()'><b>ToVerifySSDPageDisplayed</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify Next Btn of Workload Page is redirecting to SSD Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifySSDPageDisplayed()'><b>ToVerifySSDPageDisplayed</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify Next Btn of Workload Page is redirecting to SSD Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifySSDPageDisplayed()'><b>ToVerifySSDPageDisplayed</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify Next Btn of Workload Page is redirecting to SSD Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifySSDPageDisplayed()'><b>ToVerifySSDPageDisplayed</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify Next Btn of Workload Page is redirecting to SSD Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifySSDResultsDisplayedBasedOnServerType()'><b>ToVerifySSDResultsDisplayedBasedOnServerType</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: SSDs Results Displayed Based on the Selected Server Type and Server Model </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifySSDResultsDisplayedBasedOnServerType()'><b>ToVerifySSDResultsDisplayedBasedOnServerType</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: SSDs Results Displayed Based on the Selected Server Type and Server Model </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifySSDResultsDisplayedBasedOnServerType()'><b>ToVerifySSDResultsDisplayedBasedOnServerType</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: SSDs Results Displayed Based on the Selected Server Type and Server Model </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifySSDResultsDisplayedBasedOnServerType()'><b>ToVerifySSDResultsDisplayedBasedOnServerType</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: SSDs Results Displayed Based on the Selected Server Type and Server Model </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifySSDTypeIsSelected()'><b>ToVerifySSDTypeIsSelected</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify In SSD Page, SSD Type Is Auto Selected </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifySSDTypeIsSelected()'><b>ToVerifySSDTypeIsSelected</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify In SSD Page, SSD Type Is Auto Selected </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifySSDTypeIsSelected()'><b>ToVerifySSDTypeIsSelected</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify In SSD Page, SSD Type Is Auto Selected </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifySSDTypeIsSelected()'><b>ToVerifySSDTypeIsSelected</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify In SSD Page, SSD Type Is Auto Selected </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifySSDTypeMenuBar()'><b>ToVerifySSDTypeMenuBar</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Menu Bar in SSD Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifySSDTypeWorkloadMenuBar()'><b>ToVerifySSDTypeWorkloadMenuBar</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verfiy in Menu Bar Workload is enabled in SSD Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifySSDTypesAutoSelected()'><b>ToVerifySSDTypesAutoSelected</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify SSD Types are Autoselected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifySSDURL()'><b>ToVerifySSDURL</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method:  To Verify URL is Launched</td>
+<td></td>
+<td>10</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifySSDValues()'><b>ToVerifySSDValues</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify Selected Values retained in SSD Page on Click on Back Btn in Server Type Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifySSDValues()'><b>ToVerifySSDValues</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify Selected Values retained in SSD Page on Click on Back Btn in Server Type Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifySSDValues()'><b>ToVerifySSDValues</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify Selected Values retained in SSD Page on Click on Back Btn in Server Type Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifySSDValues()'><b>ToVerifySSDValues</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify Selected Values retained in SSD Page on Click on Back Btn in Server Type Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifySSDWorkloadPage()'><b>ToVerifySSDWorkloadPage</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method:  To Verify URL is launched</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifySSDsUponSelectingServerTypeToPleaseSelectServerType()'><b>ToVerifySSDsUponSelectingServerTypeToPleaseSelectServerType</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method:  Change The Server Type To -- Please Select Server type --</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifySSDsUponSelectingServerTypeToPleaseSelectServerType()'><b>ToVerifySSDsUponSelectingServerTypeToPleaseSelectServerType</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method:  Change The Server Type To -- Please Select Server type --</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifySSDsUponSelectingServerTypeToPleaseSelectServerType()'><b>ToVerifySSDsUponSelectingServerTypeToPleaseSelectServerType</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method:  Change The Server Type To -- Please Select Server type --</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifySSDsUponSelectingServerTypeToPleaseSelectServerType()'><b>ToVerifySSDsUponSelectingServerTypeToPleaseSelectServerType</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method:  Change The Server Type To -- Please Select Server type --</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifySelectAllBestAvailability()'><b>ToVerifySelectAllBestAvailability</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Select All Option in Best Availability</td>
+<td></td>
+<td>6</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifySelectAllOption()'><b>ToVerifySelectAllOption</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify All Option are selected, on Click on Select/All option</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifySelectedCatergoryDisplayed()'><b>ToVerifySelectedCatergoryDisplayed</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: Mainstream and Non-Mainstream is Selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifySelectedCatergoryDisplayed()'><b>ToVerifySelectedCatergoryDisplayed</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: Mainstream and Non-Mainstream is Selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifySelectedCatergoryDisplayed()'><b>ToVerifySelectedCatergoryDisplayed</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: Mainstream and Non-Mainstream is Selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifySelectedCatergoryDisplayed()'><b>ToVerifySelectedCatergoryDisplayed</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: Mainstream and Non-Mainstream is Selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifySelectedFormFactorDisplayed()'><b>ToVerifySelectedFormFactorDisplayed</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: SSD Form Factor Options Selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifySelectedFormFactorDisplayed()'><b>ToVerifySelectedFormFactorDisplayed</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: SSD Form Factor Options Selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifySelectedFormFactorDisplayed()'><b>ToVerifySelectedFormFactorDisplayed</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: SSD Form Factor Options Selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifySelectedFormFactorDisplayed()'><b>ToVerifySelectedFormFactorDisplayed</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: SSD Form Factor Options Selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifySelectedInterfaceOptionsDisplayed()'><b>ToVerifySelectedInterfaceOptionsDisplayed</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: SSD Intenface Options Selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifySelectedInterfaceOptionsDisplayed()'><b>ToVerifySelectedInterfaceOptionsDisplayed</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: SSD Intenface Options Selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifySelectedInterfaceOptionsDisplayed()'><b>ToVerifySelectedInterfaceOptionsDisplayed</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: SSD Intenface Options Selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifySelectedInterfaceOptionsDisplayed()'><b>ToVerifySelectedInterfaceOptionsDisplayed</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: SSD Intenface Options Selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifySelectedServerTypeDisplayed()'><b>ToVerifySelectedServerTypeDisplayed</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify The Selected Server type and Server Model Is Displayed </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifySelectedServerTypeDisplayed()'><b>ToVerifySelectedServerTypeDisplayed</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify The Selected Server type and Server Model Is Displayed </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifySelectedServerTypeDisplayed()'><b>ToVerifySelectedServerTypeDisplayed</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify The Selected Server type and Server Model Is Displayed </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifySelectedServerTypeDisplayed()'><b>ToVerifySelectedServerTypeDisplayed</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify The Selected Server type and Server Model Is Displayed </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifySelectedWorkloadsDisplayed()'><b>ToVerifySelectedWorkloadsDisplayed</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Selected Workloads are displayed on Click on Back Btn in SSD Page </td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyServerModelLabel()'><b>ToVerifyServerModelLabel</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Server Model Drop Down Label</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyServerPageLabels()'><b>ToVerifyServerPageLabels</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify Server Type Page Components</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyServerPageLabels()'><b>ToVerifyServerPageLabels</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify Server Type Page Components</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyServerPageLabels()'><b>ToVerifyServerPageLabels</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify Server Type Page Components</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyServerPageLabels()'><b>ToVerifyServerPageLabels</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify Server Type Page Components</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyServerTyeSelectAllOption()'><b>ToVerifyServerTyeSelectAllOption</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Select All Option is Selected in Server Type Page</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyServerTypeLabel()'><b>ToVerifyServerTypeLabel</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Server Type Drop Down Label</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyServerTypeMenuBar()'><b>ToVerifyServerTypeMenuBar</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify Server Type Menu Bar</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyServerTypeMenuBar()'><b>ToVerifyServerTypeMenuBar</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify Server Type Menu Bar</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyServerTypeMenuBar()'><b>ToVerifyServerTypeMenuBar</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify Server Type Menu Bar</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyServerTypeMenuBar()'><b>ToVerifyServerTypeMenuBar</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify Server Type Menu Bar</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyServerTypeNextBtn()'><b>ToVerifyServerTypeNextBtn</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Click on Next Btn in Server Type Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyServerTypePageDisplayed()'><b>ToVerifyServerTypePageDisplayed</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify Server Type Page Is Displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyServerTypePageDisplayed()'><b>ToVerifyServerTypePageDisplayed</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify Server Type Page Is Displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyServerTypePageDisplayed()'><b>ToVerifyServerTypePageDisplayed</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify Server Type Page Is Displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyServerTypePageDisplayed()'><b>ToVerifyServerTypePageDisplayed</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify Server Type Page Is Displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyServerTypePageMenubar()'><b>ToVerifyServerTypePageMenubar</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Menu Bar in Server Type Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyServerTypeServerModel()'><b>ToVerifyServerTypeServerModel</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify Server Type and Server Model</td>
+<td></td>
+<td>9</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyServerTypeServerModel()'><b>ToVerifyServerTypeServerModel</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify Server Type and Server Model</td>
+<td></td>
+<td>10</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyServerTypeServerModel()'><b>ToVerifyServerTypeServerModel</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify Server Type and Server Model</td>
+<td></td>
+<td>9</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyServerTypeServerModel()'><b>ToVerifyServerTypeServerModel</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify Server Type and Server Model</td>
+<td></td>
+<td>9</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyServerTypeServerModelList()'><b>ToVerifyServerTypeServerModelList</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify the Server Type and Server Model from the Drop Down</td>
+<td></td>
+<td>10</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyShoweMoreLink()'><b>ToVerifyShoweMoreLink</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method:  To Verify Click on Show More Link</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyShoweMoreLink()'><b>ToVerifyShoweMoreLink</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method:  To Verify Click on Show More Link</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyShoweMoreLink()'><b>ToVerifyShoweMoreLink</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method:  To Verify Click on Show More Link</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifySliderLables()'><b>ToVerifySliderLables</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method:  All Slider Labels Are displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifySliderLables()'><b>ToVerifySliderLables</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method:  All Slider Labels Are displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifySliderLables()'><b>ToVerifySliderLables</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method:  All Slider Labels Are displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifySliderLables()'><b>ToVerifySliderLables</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method:  All Slider Labels Are displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyToEditSSDTypeAutoSelectedOptions()'><b>ToVerifyToEditSSDTypeAutoSelectedOptions</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify Able to Edit the Autoselected Options in SSD Type</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyToEditSelectedOption()'><b>ToVerifyToEditSelectedOption</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: Edit Mainstream options in Best Availability Page</td>
+<td></td>
+<td>12</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyToEditSelectedOption()'><b>ToVerifyToEditSelectedOption</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: Edit Mainstream options in Best Availability Page</td>
+<td></td>
+<td>6</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyToEditSelectedOption()'><b>ToVerifyToEditSelectedOption</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: Edit Mainstream options in Best Availability Page</td>
+<td></td>
+<td>18</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyToEditSelectedOption()'><b>ToVerifyToEditSelectedOption</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: Edit Mainstream options in Best Availability Page</td>
+<td></td>
+<td>4</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyToOpenPDFFile()'><b>ToVerifyToOpenPDFFile</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify PDF file is opened in WorkloadPage</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyToOpenPDFFile()'><b>ToVerifyToOpenPDFFile</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify PDF file is opened in WorkloadPage</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyToOpenPDFFile()'><b>ToVerifyToOpenPDFFile</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify PDF file is opened in WorkloadPage</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyToOpenPDFFile()'><b>ToVerifyToOpenPDFFile</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify PDF file is opened in WorkloadPage</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyToSelectMixedWorkloads()'><b>ToVerifyToSelectMixedWorkloads</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify To Select Mixed workloads</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyToSelectMixedWorkloads()'><b>ToVerifyToSelectMixedWorkloads</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify To Select Mixed workloads</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyToSelectMixedWorkloads()'><b>ToVerifyToSelectMixedWorkloads</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify To Select Mixed workloads</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyToSelectReadIntensive()'><b>ToVerifyToSelectReadIntensive</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Select Read Intensive Workloads from Workload Page</td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyToSelectReadIntensive()'><b>ToVerifyToSelectReadIntensive</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Select Mixed Use Workloads from Workload Page</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyToSelectReadIntensiveWorkload()'><b>ToVerifyToSelectReadIntensiveWorkload</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify To Select Read Intensive workloads</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyToSelectVeryReadOptimizedWorkloads()'><b>ToVerifyToSelectVeryReadOptimizedWorkloads</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Select Very Read Optimized Workloads from Workload Page</td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyToSelectWriteIntensive()'><b>ToVerifyToSelectWriteIntensive</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Select Mixed Use Workloads from Workload Page</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyVeryReadOptimizedSelected()'><b>ToVerifyVeryReadOptimizedSelected</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify Very Read Optimized Is Selected Click on Back Btn in SSD Page</td>
+<td></td>
+<td>5</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyWorkloadBackBtn()'><b>ToVerifyWorkloadBackBtn</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify Back Btn Is redirecting to Home Page</td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyWorkloadBackBtn()'><b>ToVerifyWorkloadBackBtn</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify Back Btn Is redirecting to Home Page</td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyWorkloadBackBtn()'><b>ToVerifyWorkloadBackBtn</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify Back Btn Is redirecting to Home Page</td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyWorkloadBackBtn()'><b>ToVerifyWorkloadBackBtn</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify Back Btn Is redirecting to Home Page</td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDSelectAll.ToVerifyWorkloadMenuBar()'><b>ToVerifyWorkloadMenuBar</b><br>Test class: hpe.NewSSD.SSDSelectAll<br>Test method: To Verify the Menu bar in workload page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDSelectAll@57cf54e1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyWorkloadPageComponents()'><b>ToVerifyWorkloadPageComponents</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify WorkloadPage Components</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyWorkloadPageComponents()'><b>ToVerifyWorkloadPageComponents</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify WorkloadPage Components</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyWorkloadPageComponents()'><b>ToVerifyWorkloadPageComponents</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify WorkloadPage Components</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyWorkloadPageComponents()'><b>ToVerifyWorkloadPageComponents</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify WorkloadPage Components</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyWorkloadSelectedOptionDisplayed()'><b>ToVerifyWorkloadSelectedOptionDisplayed</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: SSD Workload Only Read Intensive should be selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyWorkloadSelectedOptionDisplayed()'><b>ToVerifyWorkloadSelectedOptionDisplayed</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: SSD Workload Only Read Intensive should be selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyWorkloadSelectedOptionDisplayed()'><b>ToVerifyWorkloadSelectedOptionDisplayed</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: SSD Workload Only Read Intensive should be selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyWorkloadSelectedOptionDisplayed()'><b>ToVerifyWorkloadSelectedOptionDisplayed</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: SSD Workload Only Read Intensive should be selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDReadAll.ToVerifyWorkloadURL()'><b>ToVerifyWorkloadURL</b><br>Test class: hpe.NewSSD.SSDReadAll<br>Test method: To Verify Workload Page URL SSDWorkloadPage </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDReadAll@6c130c45</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyWorkloadURL()'><b>ToVerifyWorkloadURL</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify Workload Page URL SSDWorkloadPage </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDMixedUse.ToVerifyWorkloadURL()'><b>ToVerifyWorkloadURL</b><br>Test class: hpe.NewSSD.SSDMixedUse<br>Test method: To Verify Workload Page URL SSDWorkloadPage </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDMixedUse@505fc5a4</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDVROAll.ToVerifyWorkloadURL()'><b>ToVerifyWorkloadURL</b><br>Test class: hpe.NewSSD.SSDVROAll<br>Test method: To Verify Workload Page URL SSDWorkloadPage </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDVROAll@4d0f2471</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWriteAll.ToVerifyWriteIntensiveSelected()'><b>ToVerifyWriteIntensiveSelected</b><br>Test class: hpe.NewSSD.SSDWriteAll<br>Test method: To Verify Read Intensive Is Selected Click on Back Btn in SSD Page</td>
+<td></td>
+<td>6</td>
+<td>hpe.NewSSD.SSDWriteAll@78123e82</td></tr>
+</table><p>
+</body>
+</html>

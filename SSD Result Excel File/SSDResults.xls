@@ -1,0 +1,48 @@
+<div style="position:relative;height: 100%; width:100%;"><img src="https://uat-app-hpessd.azurewebsites.net/images/downloadLogo.png" height="60px" width="160px" alt="Logo" style="position:absolute;top:0; left:0;right:0; bottom:0;margin:auto;"/></div><table><tr><td></td><td></td><td></td><td></td><td></td><td style="font-weight:bold;font-size:16px">HPE Solid-State Drive Selector </td><td></td><td></td><td style="font-weight:bold;">Export Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;04-06-2021</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="font-weight:bold;">Records Count &nbsp;:&nbsp;8</td></tr></tabl><br/><br/><br/><br/><table></table><table></table>
+<table border="1">
+<tr style="background:#01a982;font-weight:bold;font-size:14px;">
+<td>SKU</td>
+<td>Description</td>
+<td>Capacity</td>
+<td>Workload</td> 
+<td>FormFactor</td>
+<td>Interface</td>
+<td>Mainstream</td>
+<td>Carrier Type</td>
+<td>LifetimeWrites(TB)</td>
+<td>Endurance DWPD</td>
+<td>MAX Seq Reads Throughput (MiB/s)</td>
+<td>MAX Seq Writes Throughput (MiB/s)</td>
+<td>Random Read Average Latency uSec(4KiB,Q=1)</td>
+<td>Random Write Average Latency uSec (4KiB,Q=1)</td>
+<td>Random Read IOPS (4KiB,Q=16)</td>
+<td>Random Write IOPS (4KiB,Q=16)</td>
+<td>MAX Random Read IOPS (4KiB)</td>
+<td>MAX Random Write IOPS (4KiB)</td>
+<td>4KiB Random 70% Read/30% Write,Queue 32 Performance(IOPS)</td>
+<td>4KiB Random 50% Read/50% Write,Queue 32 Performance(IOPS)</td>
+<td>Power MAX (Watts)</td>
+<td>VSAN Certification</td>
+<td>MS Server SSDC Premium AQ 2016 Certification</td>
+<td>MS Server SSDC Premium AQ 2019 Certification</td>
+<td>Sanitize Block Erase-BE</td>
+<td>Sanitize Crypto Erase-CE</td>
+<td>Secure Erase-SE</td> 
+<td>Non Disruptive Update-NDU</td>
+<td>Trim-TM</td> 
+<td>Self-Encrypting Drive-SED</td>
+<td>Digitally Signed Firmware-SF</td>
+<td>Power Disable-PD</td>
+<td>Wide SAS-WS</td>  
+<td>High Power SAS-HPS</td>
+<td>Power Throttling-PT</td>
+<td>Federal Information Processing Standards-FIPS</td>
+<td>Trade Agreements Act-TAA</td>
+<td>Auto TTR -ATTR</td>
+<td>512e support</td>
+<td>4K sector support</td>
+<td>Flash Type</td>
+<td>Port Support</td>
+</tr>
+<tr><td>878014-B21</td><td>HPE 375GB NVMe Gen3 High Performance Low Latency Write Intensive SFF SCN U.2 P4800X SSD</td><td>375</td><td>WI</td><td>SFF</td><td>NVMe</td><td>yes</td><td>SCN</td><td>20,500</td><td>30</td><td>2,550</td><td>2,150</td><td>17</td><td>17</td><td>585,000</td><td>550000</td><td>585,000@Q16</td><td>550,000@Q16</td><td>500000</td><td>485000</td><td>13.00</td><td>Certified</td><td>Certified</td><td>Certified</td><td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>N</td><td>Y</td><td>Y</td><td>Y</td><td>MLC</td><td>Single</td></tr><tr><td>P06952-B21</td><td>HPE 750GB NVMe Gen3 High Performance Low Latency Write Intensive SFF SCN U.2 P4800X SSD</td><td>750</td><td>WI</td><td>SFF</td><td>NVMe</td><td>yes</td><td>SCN</td><td>41,000</td><td>30</td><td>2,500</td><td>2,300</td><td>17</td><td>17</td><td>575,000</td><td>585000</td><td>575,000@Q16</td><td>585,000@Q16</td><td>520000</td><td>505000</td><td>14.04</td><td>Certified</td><td>Certified</td><td>Certified</td><td>N</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>N</td><td>Y</td><td>Y</td><td>Y</td><td>MLC</td><td>Single</td></tr><tr><td>P04541-B21</td><td>HPE 400GB SAS 12G Write Intensive SFF SC PM5 SSD</td><td>400</td><td>WI</td><td>SFF</td><td>SAS</td><td>no</td><td>SC</td><td>7,300</td><td>10</td><td>1,075</td><td>1,030</td><td>135</td><td>35</td><td>104,000</td><td>115000</td><td>165,000@Q32</td><td>115,000@Q16</td><td>125000</td><td>115000</td><td>6.21</td><td>Certified</td><td>Certified</td><td>Certified</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>Y</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>TLC</td><td>Dual</td></tr><tr><td>P04543-B21</td><td>HPE 800GB SAS 12G Write Intensive SFF SC PM5 SSD</td><td>800</td><td>WI</td><td>SFF</td><td>SAS</td><td>no</td><td>SC</td><td>14,600</td><td>10</td><td>1,075</td><td>1,030</td><td>135</td><td>35</td><td>109,000</td><td>120000</td><td>165,000@Q32</td><td>120,000@Q16</td><td>135000</td><td>130000</td><td>6.71</td><td>Certified</td><td>Certified</td><td>Certified</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>Y</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>TLC</td><td>Dual</td></tr><tr><td>P21125-B21</td><td>HPE 400GB SAS 12G Write Intensive SFF SC SS540 SSD</td><td>400</td><td>WI</td><td>SFF</td><td>SAS</td><td>yes</td><td>SC</td><td>7,134</td><td>10</td><td>1,095</td><td>1,000</td><td>155</td><td>90</td><td>113,000</td><td>120000</td><td>205,000@Q256</td><td>124,000@Q16</td><td>155000</td><td>160000</td><td>6.47</td><td>Certified</td><td>Certified</td><td>Certified</td><td>Y</td><td>Y</td><td>N</td><td>Y</td><td>Y</td><td>N</td><td>Y</td><td>Y</td><td>Y</td><td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>TLC</td><td>Dual</td></tr><tr><td>P21127-B21</td><td>HPE 800GB SAS 12G Write Intensive SFF SC SS540 SSD</td><td>800</td><td>WI</td><td>SFF</td><td>SAS</td><td>yes</td><td>SC</td><td>14,268</td><td>10</td><td>1,095</td><td>1,040</td><td>98</td><td>32</td><td>130,000</td><td>120000</td><td>210,000@Q256</td><td>124,000@Q64</td><td>189000</td><td>165000</td><td>9.06</td><td>Certified</td><td>Certified</td><td>Certified</td><td>Y</td><td>Y</td><td>N</td><td>Y</td><td>Y</td><td>N</td><td>Y</td><td>Y</td><td>Y</td><td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>TLC</td><td>Dual</td></tr><tr><td>P09102-B21</td><td>HPE 1.6TB SAS 12G Write Intensive SFF (2.5in) SC 3yr Wty Digitally Signed Firmware SSD</td><td>1600</td><td>WI</td><td>SFF</td><td>SAS</td><td>no</td><td>SC</td><td>29,000</td><td>10</td><td>1,095</td><td>1,045</td><td>100</td><td>33</td><td>130,000</td><td>120000</td><td>210,000@Q32</td><td>125,000@Q16</td><td>200000</td><td>170000</td><td>8.88</td><td>Certified</td><td>Certified</td><td>Certified</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>Y</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>TLC</td><td>Dual</td></tr><tr><td>P21129-B21</td><td>HPE 1.6TB SAS 12G Write Intensive SFF SC SS540 SSD</td><td>1600</td><td>WI</td><td>SFF</td><td>SAS</td><td>no</td><td>SC</td><td>28,535</td><td>10</td><td>1,095</td><td>1,040</td><td>98</td><td>32</td><td>135,000</td><td>120000</td><td>210,000@Q64</td><td>124,000@Q64</td><td>200000</td><td>165000</td><td>10.02</td><td>Certified</td><td>Certified</td><td>Certified</td><td>Y</td><td>Y</td><td>N</td><td>Y</td><td>Y</td><td>N</td><td>Y</td><td>Y</td><td>Y</td><td>N</td><td>Y</td><td>N</td><td>N</td><td>N</td><td>Y</td><td>N</td><td>TLC</td><td>Dual</td></tr>
+

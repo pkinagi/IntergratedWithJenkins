@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Functionality Testing">
+<listeners>
+<listener class-name="hpe.NewSSD.Listeners"></listener>
+</listeners>
+  <test thread-count="5" name="All Functional Test">
+    <classes>
+      <class name="hpe.NewSSD.SSDModuleTest"/>
+    </classes>
+  </test> <!-- All Functional Test -->
+</suite> <!-- All Functionality Testing -->

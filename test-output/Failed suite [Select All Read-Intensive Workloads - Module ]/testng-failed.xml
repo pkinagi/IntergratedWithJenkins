@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Select All Read-Intensive Workloads - Module ]]" guice-stage="DEVELOPMENT">
+  <parameter name="appURL" value="https://google.com"/>
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="hpe.NewSSD.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="SSD ReadIntensive Workload Test(failed)(failed)">
+    <classes>
+      <class name="hpe.NewSSD.SSDReadAll">
+        <methods>
+          <include name="ToVerifyAllReadSSDsDisplayedOnSelectServerType"/>
+          <include name="ToVerifyHomepage"/>
+          <include name="SSDBrowserClose"/>
+        </methods>
+      </class> <!-- hpe.NewSSD.SSDReadAll -->
+    </classes>
+  </test> <!-- SSD ReadIntensive Workload Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Select All Read-Intensive Workloads - Module ]] -->

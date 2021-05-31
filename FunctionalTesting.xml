@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SSD Selector Tool All Pages Testing">
+<listeners>
+<listener class-name="hpe.NewSSD.Listeners"></listener>
+</listeners>
+  <test thread-count="5" name="Functional Test">
+    <classes>
+      <class name="hpe.NewSSD.SSDHomePage"/>
+      <class name="hpe.NewSSD.SSDWorkload"/>
+      <class name="hpe.NewSSD.SSDServertype"/>
+      <class name="hpe.NewSSD.SSDInterfaceTypePage"/>
+      <class name="hpe.NewSSD.SSDFormFactorTypePage"/>
+      <class name="hpe.NewSSD.SSDBestAvailabilityTypePage"/>
+      <class name="hpe.NewSSD.SSDResult"/>
+    </classes>
+  </test> <!-- Functional Test -->
+</suite> <!-- SSD Selector Tool All Pages Testing -->

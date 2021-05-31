@@ -1,0 +1,13 @@
+hpessdResource\BaseClass.class
+hpessdResource\ConfigPath.class
+hpe\NewSSD\App.class
+hpessdPageObjects\SSDServerTypePage.class
+hpessdPageObjects\SSDIKnowNeedPage.class
+hpessdPageObjects\SSDInterfacePage.class
+hpessdPageObjects\HomePage.class
+hpessdPageObjects\SSDFormFactorPage.class
+hpessdPageObjects\SSDSSDTypePage.class
+hpessdPageObjects\SSDWorkloadPage.class
+hpessdPageObjects\SSDBestAvailabilityPage.class
+hpessdResource\SSDTestReport.class
+hpessdPageObjects\SSDResultPage.class

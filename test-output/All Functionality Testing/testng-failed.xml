@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Functionality Testing]">
+  <listeners>
+    <listener class-name="hpe.NewSSD.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="All Functional Test(failed)">
+    <classes>
+      <class name="hpe.NewSSD.SSDModuleTest">
+        <methods>
+          <include name="SSDBrowserClose"/>
+          <include name="MouseTextForDigitallySignedToolTip"/>
+          <include name="MouseTextForPowerThrottlingToolTip"/>
+          <include name="MouseTextForTradeArgementActToolTip"/>
+          <include name="ToVerifySSDResultsNotChanged"/>
+          <include name="ToVerifySSDsResults"/>
+          <include name="ToVerifySelectedServerSSDs"/>
+          <include name="ToVerifySpecialFeatureIcons"/>
+          <include name="MouseTextForSanitizeBlockEraseToolTip"/>
+          <include name="MouseTextForFederalInformationToolTip"/>
+          <include name="MouseTextForSelfEncrypDriverToolTip"/>
+          <include name="MouseTextForSanitizeCryptoEraseToolTip"/>
+          <include name="MouseTextForNonDisruptiveUpdateToolTip"/>
+          <include name="MouseTextForTrimToolTip"/>
+          <include name="ToVerifySSDsMixedMainStreamResults"/>
+          <include name="ToVerifySSDURLLaunch"/>
+          <include name="MouseTextForSecureEraseToolTip"/>
+          <include name="ToVerifyResetButton"/>
+          <include name="ToVerifySSDDisplayed"/>
+        </methods>
+      </class> <!-- hpe.NewSSD.SSDModuleTest -->
+    </classes>
+  </test> <!-- All Functional Test(failed) -->
+</suite> <!-- Failed suite [All Functionality Testing] -->

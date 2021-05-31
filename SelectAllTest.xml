@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Select All Option - Module ">
+<listeners>
+<listener class-name="hpe.NewSSD.Listeners"/>
+</listeners>
+<parameter name = "browserType" value = "chrome" />
+<parameter name = "appURL" value = "https://google.com" />
+  <test name="SSDSelectAll">
+    <classes>
+      <class name="hpe.NewSSD.SSDSelectAll"/>
+    </classes>
+  </test> <!-- SSDSelectAll -->
+</suite> <!-- Suite -->

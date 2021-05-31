@@ -1,0 +1,534 @@
+<html>
+<head>
+<title>TestNG:  Functional Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Functional Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>81/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 25 01:27:33 PDT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>97 seconds (97727 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='hpe.NewSSD.SSDResult.ToVerifyMessageDisplayedAndExportExcelNotDisplayed()'><b>ToVerifyMessageDisplayedAndExportExcelNotDisplayed</b><br>Test class: hpe.NewSSD.SSDResult<br>Test method: To Search SKU In Search Tab For Invalid SKU To Verify Message and Export Excel and CSV Is Not Displayed</td>
+<td><div><pre>java.lang.AssertionError: Export CSV Is Not Visible expected [false] but found [true]
+	at hpe.NewSSD.SSDResult.ToVerifyMessageDisplayedAndExportExcelNotDisplayed(SSDResult.java:209)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2038185019", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2038185019'><pre>java.lang.AssertionError: Export CSV Is Not Visible expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:968)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at hpe.NewSSD.SSDResult.ToVerifyMessageDisplayedAndExportExcelNotDisplayed(SSDResult.java:209)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDResult@654f0d9c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='hpe.NewSSD.SSDFormFactorTypePage.ToClickNextButtonInFormFactorPage()'><b>ToClickNextButtonInFormFactorPage</b><br>Test class: hpe.NewSSD.SSDFormFactorTypePage<br>Test method: Click Next Button</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDFormFactorTypePage@64cd705f</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDInterfaceTypePage.ToClickonSelectAllOption()'><b>ToClickonSelectAllOption</b><br>Test class: hpe.NewSSD.SSDInterfaceTypePage<br>Test method: CLick On Select All Option and Click Next Button</td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDInterfaceTypePage@13e39c73</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDServertype.ToRetainCapacityValue()'><b>ToRetainCapacityValue</b><br>Test class: hpe.NewSSD.SSDServertype<br>Test method: To Retaine the Capacity Value</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDServertype@a9cd3b1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDServertype.ToSelectCapacity()'><b>ToSelectCapacity</b><br>Test class: hpe.NewSSD.SSDServertype<br>Test method: Verify the Alert Appering for invalid Capacity Selected</td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDServertype@a9cd3b1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDServertype.ToSelectServerModel()'><b>ToSelectServerModel</b><br>Test class: hpe.NewSSD.SSDServertype<br>Test method: To Select the Server Model from the List</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDServertype@a9cd3b1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDServertype.ToSelectServerType()'><b>ToSelectServerType</b><br>Test class: hpe.NewSSD.SSDServertype<br>Test method: To Select the Server type in the list </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDServertype@a9cd3b1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDFormFactorTypePage.ToVerifFormFactorPageComponents()'><b>ToVerifFormFactorPageComponents</b><br>Test class: hpe.NewSSD.SSDFormFactorTypePage<br>Test method: Form Factor Images Are Displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDFormFactorTypePage@64cd705f</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWorkload.ToVerifyAbleToSelectWorkload()'><b>ToVerifyAbleToSelectWorkload</b><br>Test class: hpe.NewSSD.SSDWorkload<br>Test method: To Verify Workload option are able to click</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWorkload@57c758ac</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDHomePage.ToVerifyAgreeButton()'><b>ToVerifyAgreeButton</b><br>Test class: hpe.NewSSD.SSDHomePage<br>Test method: To Verify and Click on Agree Button</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDHomePage@67a20f67</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDFormFactorTypePage.ToVerifyAllCheckBoxesSelectedInFormFactor()'><b>ToVerifyAllCheckBoxesSelectedInFormFactor</b><br>Test class: hpe.NewSSD.SSDFormFactorTypePage<br>Test method: Click on Select All In Form Factor Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDFormFactorTypePage@64cd705f</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWorkload.ToVerifyAllWorkloadSelected()'><b>ToVerifyAllWorkloadSelected</b><br>Test class: hpe.NewSSD.SSDWorkload<br>Test method: To Verify Select All Option to Select all Workload</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWorkload@57c758ac</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWorkload.ToVerifyAutoSelectedSSDType()'><b>ToVerifyAutoSelectedSSDType</b><br>Test class: hpe.NewSSD.SSDWorkload<br>Test method: To Verify Selected Workload Option is Autoselected in SSD type Page</td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDWorkload@57c758ac</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDFormFactorTypePage.ToVerifyBestAvailabilityPage()'><b>ToVerifyBestAvailabilityPage</b><br>Test class: hpe.NewSSD.SSDFormFactorTypePage<br>Test method: To Check Best Availability Page Is Opened</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDFormFactorTypePage@64cd705f</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDBestAvailabilityTypePage.ToVerifyBestAvailabilityPageComponents()'><b>ToVerifyBestAvailabilityPageComponents</b><br>Test class: hpe.NewSSD.SSDBestAvailabilityTypePage<br>Test method: To Verify The Best Availability Page Components</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDBestAvailabilityTypePage@9225652</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDBestAvailabilityTypePage.ToVerifyBestAvailabilityPageGetsDisabled()'><b>ToVerifyBestAvailabilityPageGetsDisabled</b><br>Test class: hpe.NewSSD.SSDBestAvailabilityTypePage<br>Test method: To Verify Best Availability Page gets Disabled On Click on Select All</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDBestAvailabilityTypePage@9225652</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDBestAvailabilityTypePage.ToVerifyBestAvailabilityPageMenuBar()'><b>ToVerifyBestAvailabilityPageMenuBar</b><br>Test class: hpe.NewSSD.SSDBestAvailabilityTypePage<br>Test method: To Verify the Best Availability Menu Bar</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDBestAvailabilityTypePage@9225652</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDBestAvailabilityTypePage.ToVerifyBestAvailabilityPageURL()'><b>ToVerifyBestAvailabilityPageURL</b><br>Test class: hpe.NewSSD.SSDBestAvailabilityTypePage<br>Test method: To Lauch Form Best Availability Page URL Continuation From Form Factor Type Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDBestAvailabilityTypePage@9225652</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDBestAvailabilityTypePage.ToVerifyBestAvailabilityTypes()'><b>ToVerifyBestAvailabilityTypes</b><br>Test class: hpe.NewSSD.SSDBestAvailabilityTypePage<br>Test method: To Verify Select All Option Is Selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDBestAvailabilityTypePage@9225652</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDServertype.ToVerifyCapacityLabel()'><b>ToVerifyCapacityLabel</b><br>Test class: hpe.NewSSD.SSDServertype<br>Test method: To Verify Capacity Label in Capacity Tab </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDServertype@a9cd3b1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDResult.ToVerifyCapacitySliderValue()'><b>ToVerifyCapacitySliderValue</b><br>Test class: hpe.NewSSD.SSDResult<br>Test method: To Verify Capacity Slider Value For VRO, Mixed Use and Write Intensive Workloads</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDResult@654f0d9c</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWorkload.ToVerifyDeselectReadIntensiveworkload()'><b>ToVerifyDeselectReadIntensiveworkload</b><br>Test class: hpe.NewSSD.SSDWorkload<br>Test method: To Verify Workload Options are deselected</td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDWorkload@57c758ac</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDFormFactorTypePage.ToVerifyFFNextButton()'><b>ToVerifyFFNextButton</b><br>Test class: hpe.NewSSD.SSDFormFactorTypePage<br>Test method: To Check Next Button In Form Factor Page</td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDFormFactorTypePage@64cd705f</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDFormFactorTypePage.ToVerifyFFURL()'><b>ToVerifyFFURL</b><br>Test class: hpe.NewSSD.SSDFormFactorTypePage<br>Test method: URL Verification </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDFormFactorTypePage@64cd705f</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDFormFactorTypePage.ToVerifyFormFactorChecKBoxesTypes()'><b>ToVerifyFormFactorChecKBoxesTypes</b><br>Test class: hpe.NewSSD.SSDFormFactorTypePage<br>Test method: To Verify Select All Option Is Selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDFormFactorTypePage@64cd705f</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDFormFactorTypePage.ToVerifyFormFactorOptionsGetDisabled()'><b>ToVerifyFormFactorOptionsGetDisabled</b><br>Test class: hpe.NewSSD.SSDFormFactorTypePage<br>Test method: To Check Form Factor Options gets disabled On Click On Select All</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDFormFactorTypePage@64cd705f</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDInterfaceTypePage.ToVerifyFormFactorPageIsOpened()'><b>ToVerifyFormFactorPageIsOpened</b><br>Test class: hpe.NewSSD.SSDInterfaceTypePage<br>Test method: Form Factor Page Is Launched</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDInterfaceTypePage@13e39c73</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDFormFactorTypePage.ToVerifyFormFactorPageMenuBar()'><b>ToVerifyFormFactorPageMenuBar</b><br>Test class: hpe.NewSSD.SSDFormFactorTypePage<br>Test method: To Verify Menu Bar In Form Factor Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDFormFactorTypePage@64cd705f</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDHomePage.ToVerifyHelpMeBtnLabel()'><b>ToVerifyHelpMeBtnLabel</b><br>Test class: hpe.NewSSD.SSDHomePage<br>Test method: To Verify the Help Me Choose and I Know What I Need Buttons are Visible and Aligned in the Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDHomePage@67a20f67</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDHomePage.ToVerifyHelpMeChoose()'><b>ToVerifyHelpMeChoose</b><br>Test class: hpe.NewSSD.SSDHomePage<br>Test method: To Verify it it redirecting to Workload Page</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDHomePage@67a20f67</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDHomePage.ToVerifyIKnowBtnLabel()'><b>ToVerifyIKnowBtnLabel</b><br>Test class: hpe.NewSSD.SSDHomePage<br>Test method: To Verify the I Know What I Need Visible in the Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDHomePage@67a20f67</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDHomePage.ToVerifyIKnowWhatINeed()'><b>ToVerifyIKnowWhatINeed</b><br>Test class: hpe.NewSSD.SSDHomePage<br>Test method: To Verify it is redirecting to Result Page</td>
+<td></td>
+<td>5</td>
+<td>hpe.NewSSD.SSDHomePage@67a20f67</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDInterfaceTypePage.ToVerifyInterfaceEditOption()'><b>ToVerifyInterfaceEditOption</b><br>Test class: hpe.NewSSD.SSDInterfaceTypePage<br>Test method: Edit The Interface Option to Get Disable the Select All Option</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDInterfaceTypePage@13e39c73</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDInterfaceTypePage.ToVerifyInterfacePageComponents()'><b>ToVerifyInterfacePageComponents</b><br>Test class: hpe.NewSSD.SSDInterfaceTypePage</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDInterfaceTypePage@13e39c73</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDInterfaceTypePage.ToVerifyInterfacePageMenuBar()'><b>ToVerifyInterfacePageMenuBar</b><br>Test class: hpe.NewSSD.SSDInterfaceTypePage</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDInterfaceTypePage@13e39c73</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDInterfaceTypePage.ToVerifyInterfacePageURL()'><b>ToVerifyInterfacePageURL</b><br>Test class: hpe.NewSSD.SSDInterfaceTypePage<br>Test method: To Verify The Interface URL</td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDInterfaceTypePage@13e39c73</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDInterfaceTypePage.ToVerifyInterfaceTypes()'><b>ToVerifyInterfaceTypes</b><br>Test class: hpe.NewSSD.SSDInterfaceTypePage</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDInterfaceTypePage@13e39c73</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDHomePage.ToVerifyLanchedURL()'><b>ToVerifyLanchedURL</b><br>Test class: hpe.NewSSD.SSDHomePage<br>Test method: To Verify the URL link is Opened</td>
+<td></td>
+<td>24</td>
+<td>hpe.NewSSD.SSDHomePage@67a20f67</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDBestAvailabilityTypePage.ToVerifyMainstreamOptionSelected()'><b>ToVerifyMainstreamOptionSelected</b><br>Test class: hpe.NewSSD.SSDBestAvailabilityTypePage<br>Test method: By Default One Option Is Selected In Best Availability Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDBestAvailabilityTypePage@9225652</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDResult.ToVerifyMaximumCapacitySliderValue()'><b>ToVerifyMaximumCapacitySliderValue</b><br>Test class: hpe.NewSSD.SSDResult<br>Test method: To Verify Maximum Capacity Slider Value</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDResult@654f0d9c</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDServertype.ToVerifyMenuBar()'><b>ToVerifyMenuBar</b><br>Test class: hpe.NewSSD.SSDServertype<br>Test method: To Verify Menu bar from begining</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDServertype@a9cd3b1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWorkload.ToVerifyMenuBarworkload()'><b>ToVerifyMenuBarworkload</b><br>Test class: hpe.NewSSD.SSDWorkload<br>Test method: To Verify Menu Bar in the workload</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWorkload@57c758ac</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDInterfaceTypePage.ToVerifyNextButton()'><b>ToVerifyNextButton</b><br>Test class: hpe.NewSSD.SSDInterfaceTypePage<br>Test method: Next Button In Interface Page</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDInterfaceTypePage@13e39c73</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDBestAvailabilityTypePage.ToVerifyNextButtonClickInBestAvailability()'><b>ToVerifyNextButtonClickInBestAvailability</b><br>Test class: hpe.NewSSD.SSDBestAvailabilityTypePage<br>Test method: Click Next Button In Best Availability Page</td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDBestAvailabilityTypePage@9225652</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWorkload.ToVerifyNextButtonDisabled()'><b>ToVerifyNextButtonDisabled</b><br>Test class: hpe.NewSSD.SSDWorkload<br>Test method: To Verfiy Next Button is disabled when Workload options are deselected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWorkload@57c758ac</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWorkload.ToVerifyNextButtonEnabled()'><b>ToVerifyNextButtonEnabled</b><br>Test class: hpe.NewSSD.SSDWorkload<br>Test method: To Verify Next Button is enabled When Workload options are selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWorkload@57c758ac</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDInterfaceTypePage.ToVerifyOptionsGetsDisable()'><b>ToVerifyOptionsGetsDisable</b><br>Test class: hpe.NewSSD.SSDInterfaceTypePage<br>Test method: To Check All options gets Disable When Double click on Select All Option</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDInterfaceTypePage@13e39c73</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWorkload.ToVerifyPDFFileLink()'><b>ToVerifyPDFFileLink</b><br>Test class: hpe.NewSSD.SSDWorkload<br>Test method: To Verify PDF file is opened on click on Link</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWorkload@57c758ac</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDHomePage.ToVerifyPopMessage()'><b>ToVerifyPopMessage</b><br>Test class: hpe.NewSSD.SSDHomePage<br>Test method: To Verify the Pop up Dialogue Message</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDHomePage@67a20f67</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWorkload.ToVerifyReadIntensiveAutoSelected()'><b>ToVerifyReadIntensiveAutoSelected</b><br>Test class: hpe.NewSSD.SSDWorkload<br>Test method: To Verify Read Intensive Option is Autoselected in SSD Type</td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDWorkload@57c758ac</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDHomePage.ToVerifyReleaseLinkLabel()'><b>ToVerifyReleaseLinkLabel</b><br>Test class: hpe.NewSSD.SSDHomePage<br>Test method: To Verify the Release Notes Link Visible in the Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDHomePage@67a20f67</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDHomePage.ToVerifyReleaseNotesLink()'><b>ToVerifyReleaseNotesLink</b><br>Test class: hpe.NewSSD.SSDHomePage<br>Test method: To Verify PDF File is Opened in Next Tab</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDHomePage@67a20f67</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDResult.ToVerifyResultPageClickStartOver()'><b>ToVerifyResultPageClickStartOver</b><br>Test class: hpe.NewSSD.SSDResult<br>Test method: Click on Start Over, It Directs to SSD Home Page</td>
+<td></td>
+<td>2</td>
+<td>hpe.NewSSD.SSDResult@654f0d9c</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDResult.ToVerifyResultPageRefineResults()'><b>ToVerifyResultPageRefineResults</b><br>Test class: hpe.NewSSD.SSDResult<br>Test method: Result Page Label</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDResult@654f0d9c</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDResult.ToVerifyResultPageSSDBestAvailabilityComponents()'><b>ToVerifyResultPageSSDBestAvailabilityComponents</b><br>Test class: hpe.NewSSD.SSDResult<br>Test method: In Result Page, Mainstream Option Is Selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDResult@654f0d9c</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDResult.ToVerifyResultPageSSDFormFactorComponents()'><b>ToVerifyResultPageSSDFormFactorComponents</b><br>Test class: hpe.NewSSD.SSDResult<br>Test method:  </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDResult@654f0d9c</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDResult.ToVerifyResultPageSSDInterfaceTypeComponents()'><b>ToVerifyResultPageSSDInterfaceTypeComponents</b><br>Test class: hpe.NewSSD.SSDResult<br>Test method: To Verify Interface Type Labels </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDResult@654f0d9c</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDResult.ToVerifyResultPageSSDResults()'><b>ToVerifyResultPageSSDResults</b><br>Test class: hpe.NewSSD.SSDResult<br>Test method: SSDs Results are Displayed For VRO,Mixed Use and Write Intensive Workloads with 6.4 Capacity Selected </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDResult@654f0d9c</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDResult.ToVerifyResultPageSSDSelectAllOption()'><b>ToVerifyResultPageSSDSelectAllOption</b><br>Test class: hpe.NewSSD.SSDResult<br>Test method: In Result Page, Select All Option Is Not Selected </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDResult@654f0d9c</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDResult.ToVerifyResultPageSSDWorkloadComponents()'><b>ToVerifyResultPageSSDWorkloadComponents</b><br>Test class: hpe.NewSSD.SSDResult<br>Test method: SSD Workloads Labels are Displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDResult@654f0d9c</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDResult.ToVerifyResultPageServerTypeDropDown()'><b>ToVerifyResultPageServerTypeDropDown</b><br>Test class: hpe.NewSSD.SSDResult<br>Test method: Selected Server Type and Server Model Is Displayed</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDResult@654f0d9c</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDBestAvailabilityTypePage.ToVerifyResultPageURL()'><b>ToVerifyResultPageURL</b><br>Test class: hpe.NewSSD.SSDBestAvailabilityTypePage<br>Test method: Directing To Result Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDBestAvailabilityTypePage@9225652</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDResult.ToVerifyResultPageURL()'><b>ToVerifyResultPageURL</b><br>Test class: hpe.NewSSD.SSDResult<br>Test method: To Lauch Form Result Page URL Continuation From Best Availability Page ! </td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDResult@654f0d9c</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDResult.ToVerifyResultPagelabels()'><b>ToVerifyResultPagelabels</b><br>Test class: hpe.NewSSD.SSDResult<br>Test method: In Result Page, File Download and StartOver Links</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDResult@654f0d9c</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDFormFactorTypePage.ToVerifyRetainedValuesInFormFactor()'><b>ToVerifyRetainedValuesInFormFactor</b><br>Test class: hpe.NewSSD.SSDFormFactorTypePage<br>Test method: To Check Form Factor Values Are Retained</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDFormFactorTypePage@64cd705f</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDFormFactorTypePage.ToVerifyRetainedValuesInInterfaceTypePage()'><b>ToVerifyRetainedValuesInInterfaceTypePage</b><br>Test class: hpe.NewSSD.SSDFormFactorTypePage<br>Test method: Edit The Form Factor Options</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDFormFactorTypePage@64cd705f</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDInterfaceTypePage.ToVerifyRetainedValuesInServerTypePage()'><b>ToVerifyRetainedValuesInServerTypePage</b><br>Test class: hpe.NewSSD.SSDInterfaceTypePage</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDInterfaceTypePage@13e39c73</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDInterfaceTypePage.ToVerifySelectAllEnabled()'><b>ToVerifySelectAllEnabled</b><br>Test class: hpe.NewSSD.SSDInterfaceTypePage<br>Test method: Enable the Interface Options By Clicking On Select All</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDInterfaceTypePage@13e39c73</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDFormFactorTypePage.ToVerifySelectAllOptionSelected()'><b>ToVerifySelectAllOptionSelected</b><br>Test class: hpe.NewSSD.SSDFormFactorTypePage<br>Test method: All FormFactor Types Are Enabled Then Select All Option Is Selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDFormFactorTypePage@64cd705f</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWorkload.ToVerifySelectAllReadIntensiveWorkload()'><b>ToVerifySelectAllReadIntensiveWorkload</b><br>Test class: hpe.NewSSD.SSDWorkload<br>Test method: To Verify Read Intensive All Workloads are selected</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWorkload@57c758ac</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWorkload.ToVerifySelectedOptionRetained()'><b>ToVerifySelectedOptionRetained</b><br>Test class: hpe.NewSSD.SSDWorkload<br>Test method: To Verify Selected Options Retained by clicking back Button in SSD type Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWorkload@57c758ac</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDServertype.ToVerifyServerModelLabel()'><b>ToVerifyServerModelLabel</b><br>Test class: hpe.NewSSD.SSDServertype<br>Test method: To Verify Server Model Label in Server Model Tab</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDServertype@a9cd3b1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDServertype.ToVerifyServerTypeLabel()'><b>ToVerifyServerTypeLabel</b><br>Test class: hpe.NewSSD.SSDServertype<br>Test method: To Verify Server type Label in Server Type Tab</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDServertype@a9cd3b1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDServertype.ToVerifyServerTypeMenubar()'><b>ToVerifyServerTypeMenubar</b><br>Test class: hpe.NewSSD.SSDServertype<br>Test method: To Verify the Menu Bar page highlighten details</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDServertype@a9cd3b1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDServertype.ToVerifyServerTypePageURL()'><b>ToVerifyServerTypePageURL</b><br>Test class: hpe.NewSSD.SSDServertype<br>Test method: To Verify the Server type Page URL</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDServertype@a9cd3b1</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDHomePage.ToVerifyToGetBackHomePage()'><b>ToVerifyToGetBackHomePage</b><br>Test class: hpe.NewSSD.SSDHomePage<br>Test method: To Verify it is redirecting to HomePage on Click on Start Over</td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDHomePage@67a20f67</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWorkload.ToVerifyURLLauch()'><b>ToVerifyURLLauch</b><br>Test class: hpe.NewSSD.SSDWorkload<br>Test method: !-------------------------To Verfiy HPE-SSD Site URL is displayed----------------!</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWorkload@57c758ac</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDHomePage.ToVerifyUserManualLink()'><b>ToVerifyUserManualLink</b><br>Test class: hpe.NewSSD.SSDHomePage<br>Test method: To Verify PDF is Opened is Next  Tab</td>
+<td></td>
+<td>1</td>
+<td>hpe.NewSSD.SSDHomePage@67a20f67</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDHomePage.ToVerifyUserManualLinkLabel()'><b>ToVerifyUserManualLinkLabel</b><br>Test class: hpe.NewSSD.SSDHomePage<br>Test method: To Verify the User Manual Link Visible in the Page</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDHomePage@67a20f67</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDBestAvailabilityTypePage.ToVerifyValuesRetainedInFormFactorPage()'><b>ToVerifyValuesRetainedInFormFactorPage</b><br>Test class: hpe.NewSSD.SSDBestAvailabilityTypePage<br>Test method: To Check Form Factor Values are Retained On Click on Back Button In Best Availability</td>
+<td></td>
+<td>3</td>
+<td>hpe.NewSSD.SSDBestAvailabilityTypePage@9225652</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWorkload.ToVerifyWorkloadPage()'><b>ToVerifyWorkloadPage</b><br>Test class: hpe.NewSSD.SSDWorkload<br>Test method: !-------------------------To Verfiy Workload URL is displayed----------------!</td>
+<td></td>
+<td>0</td>
+<td>hpe.NewSSD.SSDWorkload@57c758ac</td></tr>
+<tr>
+<td title='hpe.NewSSD.SSDWorkload.ToVerifyselectAllworkload()'><b>ToVerifyselectAllworkload</b><br>Test class: hpe.NewSSD.SSDWorkload<br>Test method: To Verify Selected Options are selected in SSD type</td>
+<td></td>
+<td>7</td>
+<td>hpe.NewSSD.SSDWorkload@57c758ac</td></tr>
+</table><p>
+</body>
+</html>

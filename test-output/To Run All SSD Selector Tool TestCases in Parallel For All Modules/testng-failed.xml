@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [To Run All SSD Selector Tool TestCases in Parallel For All Modules]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="hpe.NewSSD.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="Parallel Test(failed)">
+    <classes>
+      <class name="hpe.NewSSD.SSDReadAll">
+        <methods>
+          <include name="ToVerifyAllReadSSDsDisplayedOnSelectServerType"/>
+          <include name="ToVerifyHomePagePDFFilesOpen"/>
+          <include name="ToVerifyWorkloadSelectedOptionDisplayed"/>
+          <include name="ToVerifyHomepage"/>
+          <include name="ToVerifyHomepage"/>
+          <include name="ToVerifyCapacityAlert"/>
+          <include name="ToVerifySSDTypeIsSelected"/>
+          <include name="ToVerifySelectedCatergoryDisplayed"/>
+          <include name="ToVerifyFormFactorOptions"/>
+          <include name="ToVerifyWorkloadURL"/>
+          <include name="ToVerifySSDPageDisplayed"/>
+          <include name="ToVerifyEditedOptionRetained"/>
+          <include name="ToVerifySelectedFormFactorDisplayed"/>
+          <include name="ToVerifyToEditSelectedOption"/>
+          <include name="SSDBrowserClose"/>
+          <include name="ToVerifySSDResultsDisplayedBasedOnServerType"/>
+          <include name="ToVerifyServerPageLabels"/>
+          <include name="ToVerifyToSelectReadIntensive"/>
+          <include name="ToVerifyFormFactorPage"/>
+          <include name="ToVerifyServerTypePageDisplayed"/>
+          <include name="ToVerifySSDsUponSelectingServerTypeToPleaseSelectServerType"/>
+          <include name="ToVerifySelectedServerTypeDisplayed"/>
+          <include name="ToVerifySelectedInterfaceOptionsDisplayed"/>
+          <include name="ToVerifyToOpenPDFFile"/>
+          <include name="ToVerifySliderLables"/>
+          <include name="ToVerifyServerTypeMenuBar"/>
+          <include name="ToVerifyWorkloadBackBtn"/>
+          <include name="ToVerifyReadIntensiveSelected"/>
+          <include name="ToMaximumPtToMiddlePt"/>
+          <include name="ToVerifyInterfaceLabels"/>
+          <include name="ToVerifyResultPageDisplayed"/>
+          <include name="ToSelectServerTypeServerModel"/>
+          <include name="ToVerifyHomePageLabels"/>
+          <include name="ToEditFormFactionOptions"/>
+          <include name="ToVerifyInterfacePage"/>
+          <include name="ToVerifySSDValues"/>
+          <include name="ToEditInterfaceOptions"/>
+          <include name="ToVerifyDownloadExportExcelFile"/>
+          <include name="ToVerifyServerTypeServerModel"/>
+          <include name="ToVerifyDownloadExportCSVFile"/>
+          <include name="ToVerifyBestAvailabilityPageDisplayed"/>
+          <include name="ToVerifyEditedOptionsRetained"/>
+        </methods>
+      </class> <!-- hpe.NewSSD.SSDReadAll -->
+      <class name="hpe.NewSSD.SSDWriteAll">
+        <methods>
+          <include name="ToVerifySelectedFormFactorDisplayed"/>
+          <include name="ToVerifyFormFactorPage"/>
+          <include name="ToVerifyWorkloadBackBtn"/>
+          <include name="ToVerifySSDsUponSelectingServerTypeToPleaseSelectServerType"/>
+          <include name="ToVerifySelectedServerTypeDisplayed"/>
+          <include name="ToVerifySelectedInterfaceOptionsDisplayed"/>
+          <include name="ToVerifyToOpenPDFFile"/>
+          <include name="ToVerifyServerTypePageDisplayed"/>
+          <include name="ToVerifyWriteIntensiveSelected"/>
+          <include name="ToMaximumPtToMiddlePt"/>
+          <include name="ToVerifyServerTypeMenuBar"/>
+          <include name="ToVerifyInterfaceLabels"/>
+          <include name="ToVerifyResultPageDisplayed"/>
+          <include name="ToVerifyServerTypeServerModel"/>
+          <include name="ToEditFormFactionOptions"/>
+          <include name="ToVerifyDownloadExportExcelFile"/>
+          <include name="ToVerifyInterfacePage"/>
+          <include name="ToVerifyEditedOptionsRetained"/>
+          <include name="ToVerifyDownloadPDFFileIndividualSSDs"/>
+          <include name="ToEditInterfaceOptions"/>
+          <include name="ToVerifyToSelectWriteIntensive"/>
+          <include name="ToVerifySliderLables"/>
+          <include name="ToVerifyShoweMoreLink"/>
+          <include name="ToVerifyDownloadExportCSVFile"/>
+          <include name="ToVerifyDownloadIndividualExportExcelFile"/>
+          <include name="ToVerifyBestAvailabilityPageDisplayed"/>
+          <include name="ToVerifyWorkloadSelectedOptionDisplayed"/>
+          <include name="ToVerifyCapacityAlert"/>
+          <include name="ToVerifySSDTypeIsSelected"/>
+          <include name="ToVerifySSDPageDisplayed"/>
+          <include name="ToVerifySSDValues"/>
+          <include name="ToVerifySelectedCatergoryDisplayed"/>
+          <include name="ToSelectServerTypeServerModel"/>
+          <include name="SSDBrowserClose"/>
+          <include name="ToVerifySSDResultsDisplayedBasedOnServerType"/>
+          <include name="ToVerifyServerPageLabels"/>
+          <include name="ToVerifyAllWriteIntensiveSSDsDisplayedOnSelectServerType"/>
+          <include name="ToVerifyEditedOptionRetained"/>
+          <include name="ToVerifyPriceLink"/>
+          <include name="ToVerifyToEditSelectedOption"/>
+          <include name="ToVerifyHomepage"/>
+          <include name="ToVerifyFormFactorOptions"/>
+        </methods>
+      </class> <!-- hpe.NewSSD.SSDWriteAll -->
+    </classes>
+  </test> <!-- Parallel Test(failed) -->
+</suite> <!-- Failed suite [To Run All SSD Selector Tool TestCases in Parallel For All Modules] -->

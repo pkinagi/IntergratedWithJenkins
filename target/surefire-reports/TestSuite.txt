@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 49, Failures: 1, Errors: 0, Skipped: 48, Time elapsed: 3.474 sec <<< FAILURE!
+ToVerifySSDURLLaunch(hpe.NewSSD.SSDModuleTest)  Time elapsed: 2.429 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at hpessdResource.BaseClass.Intialization(BaseClass.java:82)
+	at hpe.NewSSD.SSDModuleTest.ToVerifySSDURLLaunch(SSDModuleTest.java:57)
+

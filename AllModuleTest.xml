@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose ="1" name="SSD Selector Tool Regression Test Suite For All Module">
+	<listeners>
+		<listener class-name="hpe.NewSSD.Listeners"/>
+	</listeners>
+  <test name = "Automation Test Suite for Read Intensive - Workload">
+  <classes>
+  <class name = "hpe.NewSSD.SSDReadAll"/>
+  </classes> 
+  </test>
+  <test name="Automation Test Suite for Write Intensive - Workload">
+  <classes>
+  <class name="hpe.NewSSD.SSDWriteAll"/>
+  </classes>
+  </test>
+  <test name="Automation Test Suite for Mixed Use - Workload">
+  <classes>
+  <class name="hpe.NewSSD.SSDMixedUse"/>
+  </classes>
+  </test>
+  <test name="Automation Test Suite for VERY-READ-OPTIMIZED- Workload">
+  <classes>
+  <class name="hpe.NewSSD.SSDVROAll"/>
+  </classes>
+  </test>
+  <test name = "Automation Test Suite for Select All Option In All Pages">
+  <classes>
+  <class name = "hpe.NewSSD.SSDSelectAll"/>
+  </classes>
+  </test>
+  </suite> 
